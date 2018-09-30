@@ -25,7 +25,7 @@ public class ArticleTree {
 			e.printStackTrace();
 		} finally{
 			try {
-				if(rs != null){
+				if(rs!=null){
 					rs.close();
 				}
 				if(ppstmt != null){
