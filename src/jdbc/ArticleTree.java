@@ -43,9 +43,11 @@ public class ArticleTree {
 
 	public static void tree(int id, Connection conn, int level) {
 		StringBuffer sb = new StringBuffer("");
+		
 		for(int i=0; i<level; i++) {
 			sb.append("----");
 		}
+		
 		try {
 			ResultSet rs = conn.createStatement().executeQuery("select * from article where pid ="+id);
 			while(rs.next()){
